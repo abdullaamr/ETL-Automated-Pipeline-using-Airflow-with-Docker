@@ -1,0 +1,6 @@
+scikit-learn
+dash
+numpy
+pandas
+os
+glob
