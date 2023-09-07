@@ -1,0 +1,24 @@
+[2023-01-17T20:56:38.572+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: accidents_data_etl_pipeline.extract_integrate_dataset manual__2023-01-17T20:51:07.805623+00:00 [queued]>
+[2023-01-17T20:56:38.600+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: accidents_data_etl_pipeline.extract_integrate_dataset manual__2023-01-17T20:51:07.805623+00:00 [queued]>
+[2023-01-17T20:56:38.601+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-17T20:56:38.602+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 2
+[2023-01-17T20:56:38.602+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-17T20:56:38.629+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_integrate_dataset> on 2023-01-17 20:51:07.805623+00:00
+[2023-01-17T20:56:38.639+0000] {standard_task_runner.py:55} INFO - Started process 3830 to run task
+[2023-01-17T20:56:38.644+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'accidents_data_etl_pipeline', 'extract_integrate_dataset', 'manual__2023-01-17T20:51:07.805623+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmp7tlbjrvb']
+[2023-01-17T20:56:38.648+0000] {standard_task_runner.py:83} INFO - Job 27: Subtask extract_integrate_dataset
+[2023-01-17T20:56:38.772+0000] {task_command.py:389} INFO - Running <TaskInstance: accidents_data_etl_pipeline.extract_integrate_dataset manual__2023-01-17T20:51:07.805623+00:00 [running]> on host 7fc7752d3cb4
+[2023-01-17T20:56:39.380+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=accidents_data_etl_pipeline
+AIRFLOW_CTX_TASK_ID=extract_integrate_dataset
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-17T20:51:07.805623+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-17T20:51:07.805623+00:00
+[2023-01-17T20:56:39.388+0000] {logging_mixin.py:137} INFO - got file paths successfully
+[2023-01-17T20:56:42.949+0000] {logging_mixin.py:137} WARNING - /home/***/.local/lib/python3.7/site-packages/***/operators/python.py:192 DtypeWarning: Columns (10) have mixed types.Specify dtype option on import or set low_memory=False.
+[2023-01-17T20:57:24.425+0000] {logging_mixin.py:137} WARNING - /home/***/.local/lib/python3.7/site-packages/***/operators/python.py:192 DtypeWarning: Columns (10,28,29) have mixed types.Specify dtype option on import or set low_memory=False.
+[2023-01-17T20:57:43.421+0000] {local_task_job.py:159} INFO - Task exited with return code Negsignal.SIGKILL
+[2023-01-17T20:57:45.199+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

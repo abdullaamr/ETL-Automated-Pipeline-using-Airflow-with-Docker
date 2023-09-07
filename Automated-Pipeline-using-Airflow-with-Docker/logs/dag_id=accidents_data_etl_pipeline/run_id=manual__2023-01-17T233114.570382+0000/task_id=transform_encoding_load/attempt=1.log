@@ -1,0 +1,37 @@
+[2023-01-17T23:32:33.575+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: accidents_data_etl_pipeline.transform_encoding_load manual__2023-01-17T23:31:14.570382+00:00 [queued]>
+[2023-01-17T23:32:33.599+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: accidents_data_etl_pipeline.transform_encoding_load manual__2023-01-17T23:31:14.570382+00:00 [queued]>
+[2023-01-17T23:32:33.600+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-17T23:32:33.601+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-01-17T23:32:33.602+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-17T23:32:33.637+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): transform_encoding_load> on 2023-01-17 23:31:14.570382+00:00
+[2023-01-17T23:32:33.656+0000] {standard_task_runner.py:55} INFO - Started process 12246 to run task
+[2023-01-17T23:32:33.665+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'accidents_data_etl_pipeline', 'transform_encoding_load', 'manual__2023-01-17T23:31:14.570382+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/etl.py', '--cfg-path', '/tmp/tmpc7fyihhj']
+[2023-01-17T23:32:33.671+0000] {standard_task_runner.py:83} INFO - Job 67: Subtask transform_encoding_load
+[2023-01-17T23:32:33.830+0000] {task_command.py:389} INFO - Running <TaskInstance: accidents_data_etl_pipeline.transform_encoding_load manual__2023-01-17T23:31:14.570382+00:00 [running]> on host 7fc7752d3cb4
+[2023-01-17T23:32:33.979+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=accidents_data_etl_pipeline
+AIRFLOW_CTX_TASK_ID=transform_encoding_load
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-17T23:31:14.570382+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-17T23:31:14.570382+00:00
+[2023-01-17T23:32:38.009+0000] {logging_mixin.py:137} WARNING - /home/***/.local/lib/python3.7/site-packages/***/operators/python.py:192 DtypeWarning: Columns (10) have mixed types.Specify dtype option on import or set low_memory=False.
+[2023-01-17T23:32:38.127+0000] {logging_mixin.py:137} INFO - loaded for preproccing succesfully
+[2023-01-17T23:32:38.128+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:38.408+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:38.630+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:38.855+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:38.906+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:39.252+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:39.409+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:39.410+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:39.664+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:40.092+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:57.486+0000] {logging_mixin.py:137} INFO - 1
+[2023-01-17T23:32:57.520+0000] {logging_mixin.py:137} INFO - Data preprocessed successfully
+[2023-01-17T23:35:25.523+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-01-17T23:35:26.006+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=accidents_data_etl_pipeline, task_id=transform_encoding_load, execution_date=20230117T233114, start_date=20230117T233233, end_date=20230117T233525
+[2023-01-17T23:35:26.291+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-01-17T23:35:26.744+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
